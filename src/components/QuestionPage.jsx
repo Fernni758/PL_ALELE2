@@ -5,13 +5,13 @@ function QuestionPage({onYesClick}) {
     const mensajes =[
         "seguraaaa que no???",
         "estas segurisimaaa???",
-        "no me dejes asi :(",
-        "porfis dime que si :)",
-        "no me hagas esto :(",
-        "okey ya entendi vete con el otr@ :)",
+        "ctm entonces",
+        "porfis dime que si ",
+        "hdlv ya ponle que si",
+        "okey ya entendi vete con el otro ",
         "pero sabes que te voy a extrañar mucho :(",
         "aceptalo :(",
-        "andale di que si <3" ,
+        "ctm x2 " ,
     ];
 
     //Estado para cambiar mensjae del texto de no a la lista de mensajes
