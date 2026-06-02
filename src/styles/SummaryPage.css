@@ -1,0 +1,99 @@
+.summary-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.summary-content {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease-out;
+  z-index: 10;
+  max-width: 480px;
+  width: 100%;
+}
+
+.summary-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.summary-title {
+  font-size: 3rem;
+  color: #c026d3;
+  margin-bottom: 0.5rem;
+}
+
+.summary-intro {
+  font-size: 1.1rem;
+  color: #f472b6;
+  margin-bottom: 1.5rem;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.2);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.summary-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+
+.summary-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.summary-label {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.summary-value {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #7e22ce;
+}
+
+.summary-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e879f9, transparent);
+}
+
+.summary-footer {
+  font-size: 1.1rem;
+  color: #ec4899;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.gif-container {
+  margin: 1rem auto 0;
+}
+
+.gif-container img {
+  max-width: 260px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(192, 38, 211, 0.25);
+}
+
+@media (max-width: 600px) {
+  .summary-title { font-size: 2rem; }
+  .summary-value { font-size: 1rem; }
+}

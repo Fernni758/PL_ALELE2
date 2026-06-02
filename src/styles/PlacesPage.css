@@ -1,0 +1,108 @@
+.places-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.places-title {
+  font-size: 3rem;
+  color: #c026d3;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.places-subtitle {
+  font-size: 1.2rem;
+  color: #f472b6;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 700px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.place-card {
+  background: white;
+  border-radius: 18px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.1);
+}
+
+.place-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.25);
+  border-color: #e879f9;
+}
+
+.place-card.selected {
+  border-color: #a855f7;
+  background: linear-gradient(135deg, #fdf4ff, #fce7f3);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.4);
+}
+
+.place-emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.place-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #7e22ce;
+  margin: 0.25rem 0;
+}
+
+.place-desc {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.continue-button {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+  animation: fadeIn 0.5s ease-out;
+  margin-top: 0.5rem;
+}
+
+.continue-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .places-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .places-title { font-size: 2rem; }
+}
