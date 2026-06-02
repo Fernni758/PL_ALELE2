@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/QuestionPage.css";
+import "../styles/PlacesPage.css";
 
 const PLACES = [
   { id: 1, name: "Maru Cafe  ☕", emoji: "☕", desc: "Este no esta en la roma (como todo) esta en la cuauhtemoc " },
