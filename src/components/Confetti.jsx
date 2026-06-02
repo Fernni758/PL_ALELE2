@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../styles/confetti.css";
+import "../styles/Confetti.css";
 
 function Confetti() {
     const [confettiPieces,setConfettiPieces]= useState([]);
