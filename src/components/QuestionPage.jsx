@@ -1,6 +1,5 @@
 import { useState,useEffect, use } from "react";
-import "../styles/questionPage.css";    
-
+import "../styles/QuestionPage.css";
 
 function QuestionPage({onYesClick}) {
     const mensajes =[
